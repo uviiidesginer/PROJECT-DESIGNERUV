@@ -205,3 +205,90 @@ footer{
 
 </body>
 </html>
+.hero-content h1{
+    font-size:80px;
+    color:#d4af37;
+    animation:slideDown 1.2s ease;
+}
+
+.hero-content p{
+    animation:fadeIn 2s ease;
+}
+
+@keyframes slideDown{
+    from{
+        opacity:0;
+        transform:translateY(-60px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}.btn{
+    background:#d4af37;
+    color:#000;
+    transition:0.4s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 25px #d4af37;
+}.card{
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}<div class="particles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>.particles span{
+    position:fixed;
+    width:10px;
+    height:10px;
+    background:#d4af37;
+    border-radius:50%;
+    animation:move 15s linear infinite;
+}
+
+.particles span:nth-child(1){left:10%;}
+.particles span:nth-child(2){left:30%;}
+.particles span:nth-child(3){left:50%;}
+.particles span:nth-child(4){left:70%;}
+.particles span:nth-child(5){left:90%;}
+
+@keyframes move{
+    from{
+        bottom:-20px;
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    to{
+        bottom:100%;
+        opacity:0;
+    }
+}header h1{
+    color:#d4af37;
+    text-shadow:
+        0 0 10px #d4af37,
+        0 0 20px #d4af37,
+        0 0 40px #d4af37;
+}
